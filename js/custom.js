@@ -1,20 +1,20 @@
 $( document ).ready(function() {
    
-    fetch('./nav/nav.html')
+    fetch('./header/header.html')
   .then(response => {
     return response.text()
   })
-  .then( data => {
+  .then( header => {
     let path = window.location.pathname.replace('/','').split('/');
     let classActive = 'home'; 
     if(path.length > 1 && path[1] != ''){
         classActive =  path[1];
     }
 
-    $(data).find('#navbarSupportedContent .active').removeClass('active');
-    $(data).find('.nav-item[data-item="'+classActive+'"]').addClass('active');
+    $(header).find('#navbarSupportedContent .active').removeClass('active');
+    $(header).find('.nav-item[data-item="'+classActive+'"]').addClass('active');
 
-    document.querySelector("#navbarSupportedContent").innerHTML = data;
+    document.querySelector("header").innerHTML = header;
 
   });
 
