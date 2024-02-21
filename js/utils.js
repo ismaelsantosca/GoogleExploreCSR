@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
-    let headerHtml = '../header/header-home.html';
+    let headerHtml = './header/header.html';
     if($('header').hasClass('home')){
-        headerHtml = './header/header.html';
+        headerHtml = '../header/header-home.html';
     }  
 
     fetch(headerHtml)
