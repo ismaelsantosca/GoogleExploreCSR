@@ -12,11 +12,12 @@ $( document ).ready(function() {
     }
 
     $(data).find('#navbarSupportedContent .active').removeClass('active');
-    $(data).find('.nav-item[data-item="about"]').addClass('active');
+    $(data).find('.nav-item[data-item="'+classActive+'"]').addClass('active');
 
-  }).then(data => {
     document.querySelector("#navbarSupportedContent").innerHTML = data;
+
   });
+
 });
 
 // client section owl carousel
