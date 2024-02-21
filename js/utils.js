@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    let headerHtml = '../header/header.html';
+    let headerHtml = '../header/header-home.html';
     if($('header').hasClass('home')){
         headerHtml = './header/header.html';
     }  
