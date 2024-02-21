@@ -12,9 +12,8 @@ $( document ).ready(function() {
     }
 
     $(header).find('#navbarSupportedContent .active').removeClass('active');
-    $(header).find('.nav-item[data-item="'+classActive+'"]').addClass('active');
-
     document.querySelector("header").innerHTML = header;
+    $('.nav-item[data-item="'+classActive+'"]').addClass('active');
 
   });
 
