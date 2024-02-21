@@ -1,4 +1,13 @@
-
+$( document ).ready(function() {
+   
+    fetch("./nav/nav.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("#navbarSupportedContent").innerHTML = data;
+  });
+});
 
 // client section owl carousel
 $(".client_owl-carousel").owlCarousel({
