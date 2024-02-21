@@ -1,6 +1,11 @@
 $( document ).ready(function() {
-   
-    fetch('./header/header.html')
+
+    let headerHtml = '../header/header.html';
+    if($('header').hasClass('home')){
+        headerHtml = './header/header.html';
+    }  
+
+    fetch(headerHtml)
   .then(response => {
     return response.text()
   })
