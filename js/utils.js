@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
     let footerHtml = '../templates/footer/footer.html';
     if($('footer').hasClass('home')){
-        footerHtml = './templates/footer/footer.html';
+        footerHtml = './templates/footer/footer-home.html';
     }  
 
     fetch(footerHtml).then(response => { return response.text()})
