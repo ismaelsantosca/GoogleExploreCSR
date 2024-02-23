@@ -98,7 +98,11 @@
   }
 }
 
-@media (max-width: 376px) {}
+@media (min-width: 800) {
+	  .container {
+			max-width: 750px;
+		}
+}
 
 @media (min-width: 1200px) {
   .container {
