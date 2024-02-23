@@ -4,7 +4,25 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main" "footer";
+  grid-template-rows: 1fr 80px;
 }
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
 
 .layout_padding {
   padding: 90px 0;
