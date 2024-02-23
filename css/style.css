@@ -933,6 +933,11 @@ a:focus {
 
 }
 
+.image_profile{
+ height: 250px;
+ width: 250px;
+}
+
 .person-item{
 	margin: 25px;
 }
