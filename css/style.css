@@ -951,6 +951,11 @@ h5.name{
   margin-bottom: 50px;
 }
 
+.personalLink{
+  height: 30px;
+  width: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
 
       @media (min-width: 992px) {

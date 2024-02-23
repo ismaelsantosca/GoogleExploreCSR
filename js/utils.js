@@ -1,25 +1,32 @@
 $( document ).ready(function() {
 
-    let headerHtml = '../header/header.html';
+    let headerHtml = '../templates/header/header.html';
     if($('header').hasClass('home')){
-        headerHtml = './header/header-home.html';
+        headerHtml = './templates/header/header-home.html';
     }  
 
-    fetch(headerHtml)
-  .then(response => {
-    return response.text()
-  })
-  .then( header => {
-    let path = window.location.pathname.replace('/','').split('/');
-    let classActive = 'home'; 
-    if(path.length > 1 && path[1] != ''){
-        classActive =  path[1];
-    }
+    fetch(headerHtml).then(response => { return response.text()})
+                     .then( header => {
+                          let path = window.location.pathname.replace('/','').split('/');
+                          let classActive = 'home'; 
+                          if(path.length > 1 && path[1] != ''){
+                              classActive =  path[1];
+                          }
 
-    $(header).find('#navbarSupportedContent .active').removeClass('active');
-    document.querySelector("header").innerHTML = header;
-    $('.nav-item[data-item="'+classActive+'"]').addClass('active');
+                          $(header).find('#navbarSupportedContent .active').removeClass('active');
+                          document.querySelector("header").innerHTML = header;
+                          $('.nav-item[data-item="'+classActive+'"]').addClass('active');
 
-  });
+                      });
+
+    let footerHtml = '../templates/footer/footer.html';
+    if($('footer').hasClass('home')){
+        footerHtml = './templates/footer/footer.html';
+    }  
+
+    fetch(footerHtml).then(response => { return response.text()})
+                      .then( footer => {
+                        document.querySelector("footer").innerHTML = footer;
+                      });
 
 });
