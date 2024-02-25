@@ -979,6 +979,23 @@ h5.name{
   width: 30px;
 }
 
+.container-table{
+  width: 80%;
+  margin-top: 70px;
+}
+
+.table-workshop{
+  margin-top: 20px;
+}
+
+.container-table h3{
+  font-weight: bold;
+}
+
+.custom-dialog{
+  max-width: 80% !important;
+}
+
 /*# sourceMappingURL=style.css.map */
 
       @media (min-width: 992px) {
