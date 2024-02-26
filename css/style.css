@@ -996,6 +996,10 @@ h5.name{
   max-width: 80% !important;
 }
 
+.table{
+  font-size: 0.9em;
+}
+
 /*# sourceMappingURL=style.css.map */
 
       @media (min-width: 992px) {
