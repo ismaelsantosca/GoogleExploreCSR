@@ -73,6 +73,10 @@
   .table{
     font-size: 0.7em;
   }
+
+  .participants{
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
