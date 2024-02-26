@@ -77,6 +77,10 @@
   .participants{
     text-align: center;
   }
+  .footer_section img {
+    height: 35px;
+  }
+
 }
 
 @media (max-width: 480px) {

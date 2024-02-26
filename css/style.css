@@ -1007,6 +1007,10 @@ h5.name{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.footer_section img {
+  height: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */
 
       @media (min-width: 992px) {
