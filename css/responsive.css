@@ -125,3 +125,14 @@
     max-width: 1170px;
   }
 }
+
+@media (min-width: 577px) {
+
+  .hour-table{
+    width: 180px;
+  }
+
+  .speaker-table{
+    width: 140px;
+  }
+}
